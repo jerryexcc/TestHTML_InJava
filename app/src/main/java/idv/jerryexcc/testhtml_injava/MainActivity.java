@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
         webView.addJavascriptInterface(new JavaScriptInterface(), "android_app");//JS與Android溝通用的Interfacem
 
         webView.setWebChromeClient(new WebChromeClient());//webview 才會顯示 alert
-
         webView.loadUrl(url_string);//讀取網頁
     }
 
